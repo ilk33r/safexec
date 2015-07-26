@@ -12,10 +12,10 @@ $make && make install
 ````
 
 ### php.ini directives
-; Disallow sudo commands
-safeexec.dissallow_sudo_command=1
-; Disallow all commands except php.
-safeexec.dissallow_all_expect_php=0
+* ; Disallow sudo commands
+* safeexec.dissallow_sudo_command=1
+* ; Disallow all commands except php.
+* safeexec.dissallow_all_expect_php=0
 
 ### Usage
 ````
