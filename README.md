@@ -9,6 +9,7 @@ PHP extension used to prevent sudo command in exec(), system(), passthru(), shel
 $/path/to/phpize
 $./configure --enable-safeexec
 $make && make install
+````
 
 ### php.ini directives
 ; Disallow sudo commands
@@ -17,7 +18,7 @@ safeexec.dissallow_sudo_command=1
 safeexec.dissallow_all_expect_php=0
 
 ### Usage
-
+````
 <?php
 
 // This command will cause error.
@@ -33,3 +34,4 @@ echo exec('whoami');
 
 // This command will execute normally.
 echo exec('php -r "echo \'Hello\';"');
+````
