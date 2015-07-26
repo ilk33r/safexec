@@ -1,0 +1,14 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+ARG_WITH("safeexec", "for safeexec support", "no");
+
+// Otherwise, use ARG_ENABLE
+ARG_ENABLE("safeexec", "enable safeexec support", "no");
+
+if (PHP_SAFEEXEC != "no") {
+	//EXTENSION("safeexec", "safeexec.c");
+	WARNING( "safeexec is not neccessary win32 systems." );
+}
+
